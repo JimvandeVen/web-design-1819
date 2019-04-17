@@ -1,15 +1,87 @@
-body{
+body {
     background-color: lightgray;
     font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
-li{
+:focus {
+    outline: 0;
+}
+
+/* h2{
+    margin-left: 1em;
+} */
+
+.usercase{
+    margin: 2em;
+    background-color: white;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.19);
+    padding: 1em;
+}
+    
+
+/* Header */
+
+header{
+    background-color: white;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.19);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+
+menu p{
+    font-size: 0.8em;
+}
+
+menu ul{
+    display: flex;
+    flex-direction: row;
+}
+
+menu ul li{
+    list-style: none;
+}
+
+menu ul li a{
+    border-radius: 6px;
+    text-align: center;
+    width: 12em;
+    background-color: lightsteelblue;
+    border: 1px solid lightsteelblue;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 16px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+    margin-right: 2px;
+}
+
+menu ul li a:focus{
+    background-color: #7d8c9e;
+    border: 1px solid black;
+}
+
+menu ul li a:visited{
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Drag & Drop */
+.sectionOne{
+    margin: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dragNDrop li {
     border-radius: 6px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-end;
-    width: 40%;
     height: 4em;
     list-style: none;
     margin-bottom: .2em;
@@ -18,7 +90,10 @@ li{
     animation: expand .5s ease-in-out;
 }
 
-section{
+.dragNDrop {
+    top: 0;
+    display: inline-block;
+    width: 40%;
     border: dashed 0.1em;
     margin-bottom: 1em;
     padding: 1em;
@@ -26,7 +101,7 @@ section{
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.19);
 }
 
-button {
+.dragNDrop button {
     width: 100%;
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
 	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
@@ -44,12 +119,13 @@ button {
 	text-shadow:0px 1px 0px #ffffff;
 }
 
-button:hover, button:focus {
+.dragNDrop button:hover, .dragNDrop button:focus {
 	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
-	background-color:#dfdfdf;
+    background-color:#dfdfdf;
+    border:1px solid black;
 }
 
-button:active {
+.dragNDrop button:active {
 	position:relative;
 	top:1px;
 }
@@ -60,4 +136,99 @@ button:active {
       opacity: 0;
       background: #5470B0;
     }
-  }
+}
+
+  /* Trello */
+
+.sectionTwo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+.sectionTwo section{
+    text-align: center;
+}
+
+.trello{
+    width: 20%;
+    background-color: white;
+    padding: 1em;
+    border: solid .1em black;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.19);
+}
+
+.trello ul{
+    padding: 0;
+}
+
+.trello li{
+    border-radius: 6px;
+    list-style: none;
+    background-color: lightsteelblue;
+    padding: .5em;
+    margin-bottom: .5em;
+    text-align: center;
+}
+.trello p{
+    margin-top: 0;
+}
+
+.trelloMove {
+    margin-top: 0.5em;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+}    
+.trelloMove {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+}    
+.trelloMove select {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 15px;
+    outline: 0;
+    border: 1px solid #7d8c9e;
+    background: #7d8c9e;
+    color: #000000;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.trelloMove select::-ms-expand {
+    display: none;
+}
+.trelloMove select:hover,
+.trelloMove select:focus {
+    color: #000000;
+    background: #bec5ce;
+    border: 1px solid #000000;
+}
+.trelloMove select:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.trelloMoveArrow {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    width: 0px;
+    height: 0px;
+    border: solid #000000;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+.trelloMove select:hover ~ .trelloMoveArrow,
+.trelloMove select:focus ~ .trelloMoveArrow {
+    border-color: #000000;
+}
+.trelloMove select:disabled ~ .trelloMoveArrow {
+    border-top-color: #bec5ce;
+}

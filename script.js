@@ -23,6 +23,16 @@ dragButtons.forEach(dragButton => {
     })
 })
 
+const trelloSelectors = document.querySelectorAll(".trelloMove")
+
+trelloSelectors.forEach(trelloselector => {
+    trelloselector.addEventListener("change", (e) => {
+        let movingTrello = e.srcElement.parentNode.parentNode
+        let targetTrello = e.srcElement.value
+        addElement(targetTrello, movingTrello)
+    })
+})
+
 function addElement(parentId, elementTag) {
     // Adds an element to the document
     const parent = document.getElementById(parentId);

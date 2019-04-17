@@ -7,56 +7,176 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <title>Document</title>
+    <title>Keyboard Only UX/UI</title>
 </head>
 
 <body>
-    <h1>Drag & Drop</h1>
-    <section>
-        <h2>Choose Items</h2>
-        <ul id="chooseList">
-            <li draggable="true" id="phone">Phone
-                <button class="dragButton">
-                    <span class="assistive-text">Move Phone</span>
-                </button>
-            </li>
-            <li draggable="true" id="phoneCharger">Phone Charger
-                <button class="dragButton">
-                    <span class="assistive-text">Move Phone Charger</span>
-                </button>
-            </li>
-            <li draggable="true" id="pencil">Pencil
-                <button class="dragButton">
-                    <span class="assistive-text">Move Pencil</span>
-                </button>
-            </li>
-            <li draggable="true" id="handSanitizer">Hand Sanitizer
-                <button class="dragButton">
-                    <span class="assistive-text">Move Hand Sanitizer</span>
-                </button>
-            </li>
-            <li draggable="true" id="keys">Keys
-                <button class="dragButton">
-                    <span class="assistive-text">Move Keys</span>
-                </button>
-            </li>
-            <li draggable="true" id="wallet">Wallet
-                <button class="dragButton">
-                    <span class="assistive-text">Move Wallet</span>
-                </button>
-            </li>
-        </ul>
+    <header>
+        <h1>Keyboard Only UX/UI</h1>
+        <menu>
+            <p>Jump to:</p>
+            <ul>
+                <li><a href="#dragNDrop">DRAG & DROP</a></li>
+                <li><a href="#trello">TRELLO</a></li>
+            </ul>
+        </menu>
+    </header>
+    <section class="usercase">
+        <h2 id="dragNDrop">Drag & Drop</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est
+            laborum.</p>
     </section>
-    <section>
-        <h2>Your List</h2>
-        <ul id="yourList">
-            <li draggable="true" id="notebook">Notebook
-                <button class="dragButton">
-                    <span class="assistive-text">Move Notebook</span>
-                </button>
-            </li>
 
-        </ul>
+    <section class="sectionOne">
+        <section class="dragNDrop">
+            <h3>Choose Items</h3>
+            <ul id="chooseList">
+                <li draggable="true" id="phone">Phone
+                    <button class="dragButton">
+                        <span class="assistive-text">Move Phone</span>
+                    </button>
+                </li>
+                <li draggable="true" id="phoneCharger">Phone Charger
+                    <button class="dragButton">
+                        <span class="assistive-text">Move Phone Charger</span>
+                    </button>
+                </li>
+                <li draggable="true" id="pencil">Pencil
+                    <button class="dragButton">
+                        <span class="assistive-text">Move Pencil</span>
+                    </button>
+                </li>
+                <li draggable="true" id="handSanitizer">Hand Sanitizer
+                    <button class="dragButton">
+                        <span class="assistive-text">Move Hand Sanitizer</span>
+                    </button>
+                </li>
+                <li draggable="true" id="keys">Keys
+                    <button class="dragButton">
+                        <span class="assistive-text">Move Keys</span>
+                    </button>
+                </li>
+                <li draggable="true" id="wallet">Wallet
+                    <button class="dragButton">
+                        <span class="assistive-text">Move Wallet</span>
+                    </button>
+                </li>
+            </ul>
+        </section>
+        <section class="dragNDrop">
+            <h3>Your List</h3>
+            <ul id="yourList">
+                <li draggable="true" id="notebook">Notebook
+                    <button class="dragButton">
+                        <span class="assistive-text">Move Notebook</span>
+                    </button>
+                </li>
+
+            </ul>
+        </section>
+    </section>
+    <section class="usercase">
+        <h2 id="trello">Trello</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est
+            laborum.</p>
+    </section>
+    <section class="sectionTwo">
+        <section class="trello">
+            <h3>Tasks</h3>
+            <ul id="tasks">
+                <li id="phone">Send E-mail
+                    <div class="trelloMove">
+                        <select name="move" class="trelloSelect">
+                            <option selected value="tasks">Move To</option>
+                            <option value="tasks">Tasks</option>
+                            <option value="inProgress">In Progress</option>
+                            <option value="almostDone">Almost Done</option>
+                            <option value="done">Done</option>
+                        </select>
+                        <div class="trelloMoveArrow"></div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li id="phone">Take Interview
+                    <div class="trelloMove">
+                        <select name="move" class="trelloSelect">
+                            <option selected value="tasks">Move To</option>
+                            <option value="tasks">Tasks</option>
+                            <option value="inProgress">In Progress</option>
+                            <option value="almostDone">Almost Done</option>
+                            <option value="done">Done</option>
+                        </select>
+                        <div class="trelloMoveArrow"></div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+        </section>
+        <section class="trello">
+            <h3>In Progress</h3>
+            <ul id="inProgress">
+                <li id="phone">Do Taxes
+                    <div class="trelloMove">
+                        <select name="move" class="trelloSelect">
+                            <option selected value="tasks">Move To</option>
+                            <option value="tasks">Tasks</option>
+                            <option value="inProgress">In Progress</option>
+                            <option value="almostDone">Almost Done</option>
+                            <option value="done">Done</option>
+                        </select>
+                        <div class="trelloMoveArrow"></div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="trello">
+            <h3>Almost Done</h3>
+            <ul id="almostDone">
+                <li id="phone">Write Testplan
+                    <div class="trelloMove">
+                        <select name="move" class="trelloSelect">
+                            <option selected value="tasks">Move To</option>
+                            <option value="tasks">Tasks</option>
+                            <option value="inProgress">In Progress</option>
+                            <option value="almostDone">Almost Done</option>
+                            <option value="done">Done</option>
+                        </select>
+                        <div class="trelloMoveArrow"></div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="trello">
+            <h3>Done</h3>
+            <ul id="done">
+                <li id="phone">Write Readme
+                    <div class="trelloMove">
+                        <select name="move" class="trelloSelect">
+                            <option selected value="tasks">Move To</option>
+                            <option value="tasks">Tasks</option>
+                            <option value="inProgress">In Progress</option>
+                            <option value="almostDone">Almost Done</option>
+                            <option value="done">Done</option>
+                        </select>
+                        <div class="trelloMoveArrow"></div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+            </ul>
+        </section>
     </section>
     <script type="text/javascript" src="script.js"></script>
 </body>
