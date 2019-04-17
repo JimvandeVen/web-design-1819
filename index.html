@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Drag & Drop</h1>
+    <section>
+        <h2>Choose Items</h2>
+        <ul id="chooseList">
+            <li draggable="true" id="phone">Phone
+                <button class="dragButton">
+                    <span class="assistive-text">Move Phone</span>
+                </button>
+            </li>
+            <li draggable="true" id="phoneCharger">Phone Charger
+                <button class="dragButton">
+                    <span class="assistive-text">Move Phone Charger</span>
+                </button>
+            </li>
+            <li draggable="true" id="pencil">Pencil
+                <button class="dragButton">
+                    <span class="assistive-text">Move Pencil</span>
+                </button>
+            </li>
+            <li draggable="true" id="handSanitizer">Hand Sanitizer
+                <button class="dragButton">
+                    <span class="assistive-text">Move Hand Sanitizer</span>
+                </button>
+            </li>
+            <li draggable="true" id="keys">Keys
+                <button class="dragButton">
+                    <span class="assistive-text">Move Keys</span>
+                </button>
+            </li>
+            <li draggable="true" id="wallet">Wallet
+                <button class="dragButton">
+                    <span class="assistive-text">Move Wallet</span>
+                </button>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Your List</h2>
+        <ul id="yourList">
+            <li draggable="true" id="notebook">Notebook
+                <button class="dragButton">
+                    <span class="assistive-text">Move Notebook</span>
+                </button>
+            </li>
+
+        </ul>
+    </section>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
