@@ -37,4 +37,29 @@ function addElement(parentId, elementTag) {
     // Adds an element to the document
     const parent = document.getElementById(parentId);
     parent.appendChild(elementTag);
+    const child = document.getElementById(elementTag.id);
+    console.log(child)
+}
+
+const trelloSelectors2 = document.querySelectorAll(".trelloMove2")
+
+trelloSelectors2.forEach(trelloselector2 => {
+    trelloselector2.addEventListener("change", (e) => {
+        let movingTrello2 = e.srcElement.parentNode.parentNode.parentNode
+
+
+        let targetTrello2 = e.srcElement.value
+        console.log(targetTrello2);
+        addElement(targetTrello2, movingTrello2)
+    })
+})
+
+function addElement(parentId2, elementTag2) {
+    // Adds an element to the document
+    const parent2 = document.getElementById(parentId2);
+    console.log(parent2);
+    parent2.appendChild(elementTag2);
+    const child2 = elementTag2;
+    child2.focus()
+    console.log(child2)
 }

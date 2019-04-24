@@ -174,20 +174,20 @@ menu ul li a:visited{
     margin-top: 0;
 }
 
-.trelloMove {
+.trelloMove, .trelloMove2 {
     margin-top: 0.5em;
     position: relative;
     display: inline-block;
     margin-bottom: 15px;
     width: 100%;
 }    
-.trelloMove {
+.trelloMove, .trelloMove2 {
     position: relative;
     display: inline-block;
     margin-bottom: 15px;
     width: 100%;
 }    
-.trelloMove select {
+.trelloMove select, .trelloMove2 select {
     display: inline-block;
     width: 100%;
     cursor: pointer;
@@ -204,12 +204,15 @@ menu ul li a:visited{
     display: none;
 }
 .trelloMove select:hover,
-.trelloMove select:focus {
+.trelloMove select:focus,
+.trelloMove2 select:hover,
+.trelloMove2 select:focus {
     color: #000000;
     background: #bec5ce;
     border: 1px solid #000000;
 }
-.trelloMove select:disabled {
+.trelloMove select:disabled,
+.trelloMove2 select:disabled {
     opacity: 0.5;
     pointer-events: none;
 }
@@ -226,9 +229,12 @@ menu ul li a:visited{
     transform: rotate(45deg);
 }
 .trelloMove select:hover ~ .trelloMoveArrow,
-.trelloMove select:focus ~ .trelloMoveArrow {
+.trelloMove select:focus ~ .trelloMoveArrow,
+.trelloMove2 select:hover ~ .trelloMoveArrow,
+.trelloMove2 select:focus ~ .trelloMoveArrow {
     border-color: #000000;
 }
-.trelloMove select:disabled ~ .trelloMoveArrow {
+.trelloMove select:disabled ~ .trelloMoveArrow,
+.trelloMove2 select:disabled ~ .trelloMoveArrow {
     border-top-color: #bec5ce;
 }
