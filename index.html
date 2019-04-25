@@ -192,8 +192,8 @@
         <section class="trello">
             <h3>Tasks</h3>
             <ul id="tasks2">
-                <label for="email">
-                    <li id="phone">Send E-mail
+                <label class="label" for="email">
+                    <li class="li" id="phone">Send E-mail
                         <div class="trelloMove2">
                             <select name="move" id="email" class="trelloSelect">
                                 <option selected value="tasks2">Tasks</option>
@@ -261,23 +261,22 @@
         </section>
         <section class="trello">
             <h3>Done</h3>
-            <label for="readme">
-                <ul id="done2">
-                    <label for="readme">
-                        <li id="phone">Write Readme
-                            <div class="trelloMove2">
-                                <select id="readme" name="move" class="trelloSelect">
-                                    <option value="tasks2">Tasks</option>
-                                    <option value="inProgress2">In Progress</option>
-                                    <option value="almostDone2">Almost Done</option>
-                                    <option selected value="done2">Done</option>
-                                </select>
-                                <div class="trelloMoveArrow"></div>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </li>
-                    </label>
-                </ul>
+            <ul id="done2">
+                <label for="readme">
+                    <li id="phone">Write Readme
+                        <div class="trelloMove2">
+                            <select id="readme" name="move" class="trelloSelect">
+                                <option value="tasks2">Tasks</option>
+                                <option value="inProgress2">In Progress</option>
+                                <option value="almostDone2">Almost Done</option>
+                                <option selected value="done2">Done</option>
+                            </select>
+                            <div class="trelloMoveArrow"></div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </li>
+                </label>
+            </ul>
         </section>
     </section>
     <script type="text/javascript" src="script.js"></script>

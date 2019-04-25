@@ -63,3 +63,13 @@ function addElement(parentId2, elementTag2) {
     child2.focus()
     console.log(child2)
 }
+
+const selects = document.querySelectorAll(".trelloSelect")
+
+selects.forEach(select => {
+    select.onfocus
+})
+function changeFocus(e) {
+    console.log(e);
+
+}
