@@ -12,7 +12,9 @@ For this course we're going to design and make an accessible "component", like a
 - [Things to Add](#things-to-add-)
 
 
-https://unruffled-curran-4c6d26.netlify.com/
+[DEMO](https://unruffled-curran-4c6d26.netlify.com/)
+
+
 
 ## Concept
 For my concept I first looked into drag & drop. To me this seemed like a difficult task for Marijn. So I set off to build a website that is a living testplan. My different itterations are on the website. Starting off with drag & drop and finnishing with two itterations of a better version of trello.
