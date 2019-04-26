@@ -49,6 +49,7 @@ This week finally get to meet Marijn and test for real. During this test some ot
 My trello solution on the other hand was still good. Marijn used it and was quiete happy with how it worked. He did have a few pointers form me.
 - **He expected the arrow keys to move the tasks**
 - **The area for selection of the tasks was too small**
+- **The focus doen't move with the task**
 
 Some other points of note from the test:
 - **Doesn't like to use tab to navigate**
@@ -59,20 +60,23 @@ Some other points of note from the test:
 - **Make buttons etc. bigger so they are easier to press**
 
 ### Iteration 2
-Because we only had one day, I didn't get to iterate (maybe I did, but then you wouldn't be able to read this message 😮)
+For the second iteration I streamlined the trello feature with my new insights from the second test. I made it so that that the tasks are movable with the arrow keys. i also made the selection of the tasks easier. You can now klick on the whole task to select it.
+
 ![iteration2.1](screens/iteration2.1.png)
 
 ## Test 3
 #### Date: 25-04-2019
-This week, one day before the deadline we had another test-session with Marijn. I was the last one. I was worried as always that it wouldn't go well, but ... it wen't pretty great actually. When he started with looking for meme-formats, I saw that the first element (which has an automatic focus) lost focus immediately; probably due to a misclick or wrong button press. So the arrow keys didn't realy work there but he didn't really have any trouble, because they were all close together and large. Then he wen't on to add the top text, which worked, it looked like he had a bit of trouble with the arrow keys, because I think focus was lost again (but I'm not sure). He went through these steps at pretty decent pace. Moving the text worked, changing the size worked. 
+This was the second test with Marijn, so I set to test my app on his laptop. And it didn't work... Sadly Apple has a different way to work with selectors. When you press the arrow keys when a selector is focused you open the selector. Then you have to select an option and press enter to confirm. That are alot of keys you need to press. In windows you don't have to open the selector and you don't have to confirm your selection.
 
-The only feedback I got was from Vasilis:
-- **Better defaults**
+Points of note from the test:
+- **Give good feedback on interactive parts of the application**
+- **Provide affordance so the user doesn't have to search for interactive parts**
+- **Looking for interactive parts and clicking on stuff costs alot of concentration/energy**
+- **Allow the user to select different cards with different keys(like: IJKL)**
+- **Make it more clear when you have a card selected**
 
-I got this feedback because the text is white by default, and you couldn't read it when the background was white. Typically meme-text is white with a black border. Also the font isn't right, the main font used in memes is Impact.
-
-### Iteration 2
-Because we only had one day, I didn't get to iterate (maybe I did, but then you wouldn't be able to read this message 😮)
+### Iteration 3
+The third itteration will only be scketches because test 3 was only yesterday.
 
 ---
 
